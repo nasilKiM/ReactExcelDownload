@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import { CSVLink } from "react-csv";
 import xlsxLibrary from "./xlsx/xlsxLibrary";
+import ExceljsDownload from "./exceljs";
 
 function App() {
   const header = [
@@ -40,6 +41,7 @@ function App() {
     <button >
       <CSVLink data={data} header={header}>react-csv 라이브러리 엑셀 다운로드</CSVLink>
     </button>
+      <button onClick={ExceljsDownload}>reactjs 라이브러리 엑셀 다운로드</button>
     </>
   );
 }
